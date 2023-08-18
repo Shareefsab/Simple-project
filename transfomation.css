@@ -1,0 +1,125 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navcontainer {
+    width: 100%;
+    height: 80px;
+    font-size: 2rem;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.types a {
+    margin-right: 25px;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.contentbox {
+    cursor: pointer;
+    height: 150vh;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: beige;
+    border: 3px solid black;
+    transition: all 1s 1s ease-in;
+}
+
+.contentbox:hover {
+    transform: rotate(360deg);
+}
+
+
+.leftbox {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 100px;
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 25px;
+}
+
+.rightbox {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 100px;
+    margin-top: 100px;
+    margin-left: 25px;
+    font-size: 25px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 30px;
+    background-color: aqua;
+}
+
+.animy:hover {
+    animation-name: hello;
+    animation: 5s linear 1s infinite alternate none running hello;
+}
+
+@keyframes hello {
+    from {
+        top: 0px;
+        left: 700px;
+    }
+
+    to {
+        top: 0px;
+        right: 900px;
+    }
+}
+
+/* .animycontainer{
+        height: 30vh;
+        width: 100vw;
+        background-color: rebeccapurple;
+        display: flex;
+        position: relative;
+    } */
+
+.animy {
+    background-color: brown;
+    margin: px;
+    position: relative;
+    animation-name: rightmovement;
+    animation: 1s linear 1s infinite alternate none running rightmovement;
+
+}
+
+@keyframes rightmovement {
+    from {
+        top: 0px;
+        left: 0px;
+    }
+
+    to {
+        top: 0px;
+        left: 200px;
+
+    }
+}
+
+@media (min-width:640px) {
+    .contentbox {
+        background-color: blue;
+    }
+}
+
+@media (max-width:640px) {
+    .contentbox {
+        background-color: red;
+    }
+}
